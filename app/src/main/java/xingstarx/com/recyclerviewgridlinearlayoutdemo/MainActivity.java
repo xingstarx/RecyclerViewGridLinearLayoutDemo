@@ -46,8 +46,8 @@ public class MainActivity extends AppCompatActivity {
         mRecyclerView = (RecyclerView) findViewById(android.R.id.list);
         mGridLayoutManager = new GridLayoutManager(this, 4);
         mRecyclerView.setLayoutManager(mGridLayoutManager);
-//        mRecyclerView.addItemDecoration(new GridSpacingItemDecoration(4, dipToPX(this, 8), false, 0));
-        mRecyclerView.addItemDecoration(new SpacingDecoration(dipToPX(this, 8), dipToPX(this, 8), false));
+        mRecyclerView.addItemDecoration(new GridSpacingItemDecoration(4, dipToPX(this, 8), false, 0));
+//        mRecyclerView.addItemDecoration(new SpacingDecoration(dipToPX(this, 8), dipToPX(this, 8), false));
         mDataAdapter = new DataAdapter(generatorData());
         calculateItemWidth();
         mRecyclerView.setAdapter(mDataAdapter);
