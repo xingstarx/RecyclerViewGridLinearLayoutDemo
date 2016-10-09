@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
     private List<String> generatorData() {
         List<String> dataList = new ArrayList<>();
         for (int i = 0; i < 20; i++) {
-            dataList.add("Android Developer " + i);
+            dataList.add("And " + i);
         }
         return dataList;
     }
